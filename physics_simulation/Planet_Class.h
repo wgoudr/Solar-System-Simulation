@@ -19,7 +19,7 @@ class Planet {
 
     // creating gravity objects takes x, y coordinates, a field gravity field strength value, a orbit radius
 public:
-    Planet(float pos_x, float pos_y, float strength, float orbital_radius, float orbital_time) {
+    Planet(float pos_x, float pos_y, float strength, float orbital_radius, float orbital_time, float drawn_size = 8) {
         pos.x = pos_x;
         pos.y = pos_y;
         orbital_r = orbital_radius;
@@ -31,7 +31,7 @@ public:
         // after the object is made, set the shape's position, color, and radius using sfml
         s.setPosition(pos);
         s.setFillColor(sf::Color::Red);
-        s.setRadius(10);
+        s.setRadius(drawn_size);
     }
 
     void update_position() {

@@ -5,39 +5,28 @@
 #include "Planet_Class.h"
 #include "Asteroid_class.h"
 
-// !! NOTES !!
-// in sfml you can create a vector with 2 float elements x and y
-// velocity is calculated based on framerates, because its a measure of time. speed = d(position)/d(frame rate)
-// we assume the mass to be 1 for all objects (for now...)
-// change the strength to mass for both objects
-// create unique objects for each planet
-// add hit detection between asteroid and planets
-// add random asteroid velocities, starting positions, and mass
-// add trails to asteroid for visual clarity
-// make each shape a different size
-// change scales and distance to better reflect size of solar system
-// take real data from planets and change shape of orbits
 
 const double PI = 3.1415926535897932384626433832795028841971693993751058209;
 
 // !! MAIN !!
 // create a window and set size and  set the frame rate of the window
-// create two gravity sources with different positions in the window. Original: (500, 500, 7000)
+// for every loop, update physics and update the figures to be drawn according to update physics
+// create planets and asteroids with different positions in the window
 int main(){
     
     sf::RenderWindow window(sf::VideoMode(1920, 1080), "SIMULATION OF ASTEROIDS TRAVELING THROUGH THE SOLAR SYSTEM", sf::Style::Fullscreen);
     window.setFramerateLimit(60);
 
     // making each planet of the solar system   
-    Planet the_sun(960, 540, 75, 1, 0.1);
-    Planet mercury(960, 540, 10, 50, 100);
-    Planet venus(960, 540, 10, 100, 565);
-    Planet earth(960, 540, 10, 150, 365);
+    Planet the_sun(960-12.5, 540-12.5, 75, 0.1, 365, 25);
+    Planet mercury(960, 540, 10, 60, 100);
+    Planet venus(960, 540, 10, 85, 565);
+    Planet earth(960, 540, 10, 125, 365);
     Planet mars(960, 540, 10, 200, 265);
-    Planet jupiter(960, 540, 10, 250, 665);
-    Planet saturn(960, 540, 10, 300, 765);
-    Planet neptune(960, 540, 10, 350, 865);
-    Planet uranus(960, 540, 10, 325, 1100);
+    Planet jupiter(960, 540, 10, 275, 665);
+    Planet saturn(960, 540, 10, 350, 765);
+    Planet neptune(960, 540, 10, 425, 865);
+    Planet uranus(960, 540, 10, 500, 1100);
 
     // adding each planet to a vector 
     std::vector<Planet> sources;

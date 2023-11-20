@@ -1,4 +1,4 @@
 ﻿  simulation.cpp
-C:\Users\wgoud\my_programs\c_pp_programs\physics_simulation\physics_simulation\simulation.cpp(32,37): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\wgoud\my_programs\c_pp_programs\physics_simulation\physics_simulation\simulation.cpp(32,44): warning C4305: 'argument': truncation from 'double' to 'float'
 C:\Users\wgoud\my_programs\c_pp_programs\physics_simulation\physics_simulation\simulation.cpp(59,71): warning C4305: 'argument': truncation from 'double' to 'float'
   physics_simulation.vcxproj -> C:\Users\wgoud\my_programs\c_pp_programs\physics_simulation\x64\Debug\physics_simulation.exe

@@ -25,7 +25,7 @@ public:
         //set the position, color and radius of the asteroid in the rendered window
         s.setPosition(pos);
         s.setFillColor(sf::Color::White);
-        s.setRadius(3);
+        s.setRadius(2);
     }
 
     // set the position of the asteroid draw it every time the window updates
