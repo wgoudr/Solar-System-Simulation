@@ -15,7 +15,7 @@ const double PI = 3.1415926535897932384626433832795028841971693993751058209;
 int main(){
     
     sf::RenderWindow window(sf::VideoMode(1920, 1080), "SIMULATION OF ASTEROIDS TRAVELING THROUGH THE SOLAR SYSTEM", sf::Style::Fullscreen);
-    window.setFramerateLimit(60);
+    window.setFramerateLimit(120);
 
     // making each planet of the solar system   
     Planet the_sun(960-12.5, 540-12.5, 75, 0.1, 365, 25);
